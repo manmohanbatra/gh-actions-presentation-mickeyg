@@ -54,6 +54,14 @@ jobs:
         #run: echo "::set-output name=step2value::world"
         run: echo "step2value=world" >> $GITHUB_OUTPUT
         
+      - name: Step 3
+        id: step3
+        run: echo "step3output=PleaseWork" >> $GITHUB_ENV
+        
+      - name: Step 4
+        id: step4
+        run: echo "${{env.step3output}}"
+        
   
   job3:
     runs-on: ubuntu-latest
