@@ -6,7 +6,7 @@ on:
       runs-on:
         required: true
         type: string
-        default: ubuntu-latest
+        default: self-hosted
       artifact-to-deploy:
         required: true
         type: string
